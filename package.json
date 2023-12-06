@@ -1,15 +1,12 @@
 {
   "name": "hwfrontops",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": "https://github.com/Abildaev/dockertest.git",
+  "author": "Abildaev Dastan <abildaev1996@gmail.com>",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "node-fetch": "2.7.0"
   }
 }

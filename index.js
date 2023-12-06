@@ -1,14 +1,16 @@
 const express = require('express')
-
+const fetch = require('node-fetch').default
 
 const app = express()
 
+
 app.get('/', (req, res) => {
-    res.send(new Date())
+    fetch("http://localhost:3005").then(res => res.json()).then(data => {
+        res.send(`<h1>${data}</h1>`)
+    })
 })
 
-
 app.listen(3000, () => {
-    console.log("reading")
+    console.log('index.js reading')
 })
 

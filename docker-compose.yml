@@ -1,0 +1,14 @@
+version: '3'
+services:
+  run_date:
+    image: abildaev/run_date
+    build:
+      dockerfile: date.dockerfile
+  run_index:
+    image: abildaev/run_index
+    build:
+      dockerfile: index.dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - run_date
