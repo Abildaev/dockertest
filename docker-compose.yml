@@ -3,9 +3,6 @@ services:
     image: abildaev/run_date
     build:
       dockerfile: date.dockerfile
-    environment:
-      - DOCKER_BUILDKIT=0  # Исправленная строка
-
   run_index:
     image: abildaev/run_index
     build:
