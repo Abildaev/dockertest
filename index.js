@@ -5,7 +5,7 @@ const app = express()
 
 
 app.get('/', (req, res) => {
-    fetch("http://localhost:3005").then(res => res.json()).then(data => {
+    fetch("http://date:3005").then(res => res.json()).then(data => {
         res.send(`<h1>${data}</h1>`)
     })
 })
