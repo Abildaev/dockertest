@@ -1,13 +1,17 @@
-
 services:
   run_date:
     image: abildaev/run_date
     build:
       dockerfile: date.dockerfile
+    environment:
+      - DOCKER_BUILDKIT=0  # Исправленная строка
+
   run_index:
     image: abildaev/run_index
     build:
       dockerfile: index.dockerfile
+    environment:
+      - DOCKER_BUILDKIT=0  # Исправленная строка
     ports:
       - "3000:3000"
     env_file:
