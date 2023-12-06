@@ -10,11 +10,7 @@ services:
     image: abildaev/run_index
     build:
       dockerfile: index.dockerfile
-    environment:
-      - DOCKER_BUILDKIT=0  # Исправленная строка
     ports:
       - "3000:3000"
-    env_file:
-      - .env
     depends_on:
       - run_date
