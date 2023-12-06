@@ -1,4 +1,4 @@
-version: '3'
+
 services:
   run_date:
     image: abildaev/run_date
@@ -10,5 +10,7 @@ services:
       dockerfile: index.dockerfile
     ports:
       - "3000:3000"
+    env_file:
+      - .env
     depends_on:
       - run_date
