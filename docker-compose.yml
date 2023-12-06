@@ -1,12 +1,12 @@
 services:
   run_date:
-    image: abildaev/run_date
+    image: abilldaev/run_date
     build:
       dockerfile: date.dockerfile
     ports:
       - "3005:3005"
   run_index:
-    image: abildaev/run_index
+    image: abilldaev/run_index
     build:
       dockerfile: index.dockerfile
     ports:
