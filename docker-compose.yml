@@ -13,3 +13,7 @@ services:
       - "3000:3000"
     depends_on:
       - run_date
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
