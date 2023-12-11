@@ -1,4 +1,7 @@
 const express = require('express')
+const os= require ('os')
+
+
 
 
 
@@ -10,5 +13,5 @@ app.get('/', (req, res) => {
 
 
 app.listen(3005, () => {
-    console.log("date.js reading")
+    console.log("date.js reading", os.version())
 })

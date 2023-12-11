@@ -5,6 +5,9 @@
   "repository": "https://github.com/Abildaev/dockertest.git",
   "author": "Abildaev Dastan <abildaev1996@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "express": "^4.18.2",
     "node-fetch": "2.7.0"
